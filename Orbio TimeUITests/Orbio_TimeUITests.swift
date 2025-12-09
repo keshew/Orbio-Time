@@ -1,10 +1,3 @@
-//
-//  Orbio_TimeUITests.swift
-//  Orbio TimeUITests
-//
-//  Created by Артём Коротков on 09.12.2025.
-//
-
 import XCTest
 
 final class Orbio_TimeUITests: XCTestCase {

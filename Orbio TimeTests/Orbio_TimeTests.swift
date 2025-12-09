@@ -1,10 +1,3 @@
-//
-//  Orbio_TimeTests.swift
-//  Orbio TimeTests
-//
-//  Created by Артём Коротков on 09.12.2025.
-//
-
 import XCTest
 @testable import Orbio_Time
 
