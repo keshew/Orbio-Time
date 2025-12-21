@@ -6,7 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8621617D2EF8335600FBB524 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8621617C2EF8335600FBB524 /* FirebaseCore */; };
+		8621617F2EF8335600FBB524 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8621617E2EF8335600FBB524 /* FirebaseMessaging */; };
+		862161822EF8345100FBB524 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 862161812EF8345100FBB524 /* AppsFlyerLib */; };
+		862161C02EF83E6D00FBB524 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 862161B92EF83E6D00FBB524 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		862161C82EF83EA100FBB524 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 862161C72EF83EA100FBB524 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		862161BE2EF83E6D00FBB524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86ED29622EE8848E00C48F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862161B82EF83E6D00FBB524;
+			remoteInfo = NotificationService;
+		};
 		86ED297B2EE8848F00C48F64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 86ED29622EE8848E00C48F64 /* Project object */;
@@ -23,13 +38,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		862161C52EF83E6D00FBB524 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				862161C02EF83E6D00FBB524 /* NotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		862161B92EF83E6D00FBB524 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ED296A2EE8848E00C48F64 /* Orbio Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orbio Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ED297A2EE8848F00C48F64 /* Orbio TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Orbio TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ED29842EE8848F00C48F64 /* Orbio TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Orbio TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		862161C12EF83E6D00FBB524 /* Exceptions for "NotificationService" folder in "NotificationService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 862161B82EF83E6D00FBB524 /* NotificationService */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		862161BA2EF83E6D00FBB524 /* NotificationService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				862161C12EF83E6D00FBB524 /* Exceptions for "NotificationService" folder in "NotificationService" target */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
 		86ED296C2EE8848E00C48F64 /* Orbio Time */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Orbio Time";
@@ -48,10 +96,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		862161B62EF83E6D00FBB524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862161C82EF83EA100FBB524 /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86ED29672EE8848E00C48F64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8621617F2EF8335600FBB524 /* FirebaseMessaging in Frameworks */,
+				8621617D2EF8335600FBB524 /* FirebaseCore in Frameworks */,
+				862161822EF8345100FBB524 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +131,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862161C62EF83EA100FBB524 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86ED29612EE8848E00C48F64 = {
 			isa = PBXGroup;
 			children = (
 				86ED296C2EE8848E00C48F64 /* Orbio Time */,
 				86ED297D2EE8848F00C48F64 /* Orbio TimeTests */,
 				86ED29872EE8848F00C48F64 /* Orbio TimeUITests */,
+				862161BA2EF83E6D00FBB524 /* NotificationService */,
+				862161C62EF83EA100FBB524 /* Frameworks */,
 				86ED296B2EE8848E00C48F64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				86ED296A2EE8848E00C48F64 /* Orbio Time.app */,
 				86ED297A2EE8848F00C48F64 /* Orbio TimeTests.xctest */,
 				86ED29842EE8848F00C48F64 /* Orbio TimeUITests.xctest */,
+				862161B92EF83E6D00FBB524 /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +164,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		862161B82EF83E6D00FBB524 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862161C22EF83E6D00FBB524 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				862161B52EF83E6D00FBB524 /* Sources */,
+				862161B62EF83E6D00FBB524 /* Frameworks */,
+				862161B72EF83E6D00FBB524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				862161BA2EF83E6D00FBB524 /* NotificationService */,
+			);
+			name = NotificationService;
+			packageProductDependencies = (
+				862161C72EF83EA100FBB524 /* FirebaseMessaging */,
+			);
+			productName = NotificationService;
+			productReference = 862161B92EF83E6D00FBB524 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		86ED29692EE8848E00C48F64 /* Orbio Time */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86ED298E2EE8848F00C48F64 /* Build configuration list for PBXNativeTarget "Orbio Time" */;
@@ -102,16 +194,21 @@
 				86ED29662EE8848E00C48F64 /* Sources */,
 				86ED29672EE8848E00C48F64 /* Frameworks */,
 				86ED29682EE8848E00C48F64 /* Resources */,
+				862161C52EF83E6D00FBB524 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				862161BF2EF83E6D00FBB524 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				86ED296C2EE8848E00C48F64 /* Orbio Time */,
 			);
 			name = "Orbio Time";
 			packageProductDependencies = (
+				8621617C2EF8335600FBB524 /* FirebaseCore */,
+				8621617E2EF8335600FBB524 /* FirebaseMessaging */,
+				862161812EF8345100FBB524 /* AppsFlyerLib */,
 			);
 			productName = "Orbio Time";
 			productReference = 86ED296A2EE8848E00C48F64 /* Orbio Time.app */;
@@ -173,6 +270,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					862161B82EF83E6D00FBB524 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					86ED29692EE8848E00C48F64 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -195,6 +295,10 @@
 			);
 			mainGroup = 86ED29612EE8848E00C48F64;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8621617B2EF8335600FBB524 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				862161802EF8345100FBB524 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 86ED296B2EE8848E00C48F64 /* Products */;
 			projectDirPath = "";
@@ -203,11 +307,19 @@
 				86ED29692EE8848E00C48F64 /* Orbio Time */,
 				86ED29792EE8848F00C48F64 /* Orbio TimeTests */,
 				86ED29832EE8848F00C48F64 /* Orbio TimeUITests */,
+				862161B82EF83E6D00FBB524 /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		862161B72EF83E6D00FBB524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86ED29682EE8848E00C48F64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +344,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		862161B52EF83E6D00FBB524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86ED29662EE8848E00C48F64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +375,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		862161BF2EF83E6D00FBB524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862161B82EF83E6D00FBB524 /* NotificationService */;
+			targetProxy = 862161BE2EF83E6D00FBB524 /* PBXContainerItemProxy */;
+		};
 		86ED297C2EE8848F00C48F64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 86ED29692EE8848E00C48F64 /* Orbio Time */;
@@ -269,6 +393,66 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		862161C32EF83E6D00FBB524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = UPL3YLN45T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.orbitotimeorb.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = orbito_notif_profile;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		862161C42EF83E6D00FBB524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = UPL3YLN45T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.orbitotimeorb.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = orbito_notif_profile;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		86ED298C2EE8848F00C48F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,11 +577,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Orbio Time/Orbio Time.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orbio Time/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Orbio-Time-Info.plist";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We collect usage data to enhance app performance, improve features, and provide a better user experience. Your information remains secure and is not shared with third parties for advertising purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.orbitotimeorb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -426,11 +613,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Orbio Time/Orbio Time.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Orbio Time/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Orbio-Time-Info.plist";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We collect usage data to enhance app performance, improve features, and provide a better user experience. Your information remains secure and is not shared with third parties for advertising purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,7 +631,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.orbitotimeorb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -525,6 +715,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		862161C22EF83E6D00FBB524 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862161C32EF83E6D00FBB524 /* Debug */,
+				862161C42EF83E6D00FBB524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86ED29652EE8848E00C48F64 /* Build configuration list for PBXProject "Orbio Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -562,6 +761,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8621617B2EF8335600FBB524 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		862161802EF8345100FBB524 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8621617C2EF8335600FBB524 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8621617B2EF8335600FBB524 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		8621617E2EF8335600FBB524 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8621617B2EF8335600FBB524 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		862161812EF8345100FBB524 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 862161802EF8345100FBB524 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		862161C72EF83EA100FBB524 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8621617B2EF8335600FBB524 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86ED29622EE8848E00C48F64 /* Project object */;
 }
